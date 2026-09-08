@@ -90,19 +90,18 @@ function toggleDetails(btn){
 
 <div id="apply" class="formbox">
 <h2>Fill out the form to get a free consultation</h2>
-<form action="https://formspree.io/f/xjyvajqw" method="POST">
-<input type="hidden" name="_subject" value="New You Can Legal consultation application">
-<div class="field"><label>Citizenship (country of your passport)</label><select name="citizenship" required><option value="">Select country</option><option>Nigeria</option><option>Kenya</option><option>Ghana</option><option>South Africa</option><option>Uganda</option><option>Other</option></select></div>
-<div class="field"><label>Do you live in the country that issued your passport?</label><select name="passport_residence" required><option value="">Select</option><option>Yes, I live there</option><option>No, I live in another country</option></select></div>
-<div class="field"><label>Your Full Name</label><input name="full_name" required></div>
-<div class="field"><label>How old are you?</label><input name="age" type="number" min="18" required></div>
-<div class="field"><label>Your Email</label><input name="email" type="email" required></div>
-<div class="field"><label>Your WhatsApp number</label><input name="whatsapp" required placeholder="+234..."></div>
-<div class="field"><label>I am</label><select name="applicant_type" required><option value="">Select</option><option>I'm looking for a job for myself</option><option>I represent an agency and have clients</option></select></div>
+<form onsubmit="event.preventDefault();alert('Thank you. This is a demo form. Connect it to your email or database before going live.');">
+<div class="field"><label>Citizenship (country of your passport)</label><select required><option value="">Select country</option><option>Nigeria</option><option>Kenya</option><option>Ghana</option><option>South Africa</option><option>Uganda</option><option>Other</option></select></div>
+<div class="field"><label>Do you live in the country that issued your passport?</label><select required><option value="">Select</option><option>Yes, I live there</option><option>No, I live in another country</option></select></div>
+<div class="field"><label>Your Full Name</label><input required></div>
+<div class="field"><label>How old are you?</label><input type="number" min="18" required></div>
+<div class="field"><label>Your Email</label><input type="email" required></div>
+<div class="field"><label>Your WhatsApp number</label><input required placeholder="+234..."></div>
+<div class="field"><label>I am</label><select required><option value="">Select</option><option>I'm looking for a job for myself</option><option>I represent an agency and have clients</option></select></div>
 <div class="checks2">
-<label><input type="checkbox" name="fees_acknowledged" value="Yes" required> I confirm that I understand there may be official government or administrative fees related to the application process.</label>
-<label><input type="checkbox" name="terms_acknowledged" value="Yes" required> I understand that the company provides paid guidance and support, including employment documents and a work permit. Visa sponsorship is not included, and the final visa decision is made by the relevant immigration authorities.</label>
-<label><input type="checkbox" name="contact_consent" value="Yes" required> I agree to be contacted by email or WhatsApp regarding my request and consent to the processing of my personal data according to the Privacy Policy.</label>
+<label><input type="checkbox" required> I confirm that I understand there may be official government or administrative fees related to the application process.</label>
+<label><input type="checkbox" required> I understand that the company provides paid guidance and support, including employment documents and a work permit. Visa sponsorship is not included, and the final visa decision is made by the relevant immigration authorities.</label>
+<label><input type="checkbox" required> I agree to be contacted by email or WhatsApp regarding my request and consent to the processing of my personal data according to the Privacy Policy.</label>
 </div>
 <button class="submit">Apply Now</button>
 </form>
